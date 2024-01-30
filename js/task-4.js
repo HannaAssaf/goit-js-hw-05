@@ -1,6 +1,6 @@
 `use strict`;
 
-getTotalBalanceByGender = (users, gender) =>
+const getTotalBalanceByGender = (users, gender) =>
 users
 .filter(user => user.gender===gender)
 .reduce((sumBalance, user) => sumBalance + user.balance, 0);
